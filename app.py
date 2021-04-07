@@ -19,7 +19,7 @@ def preProcess_data(text):
 
 app = FastAPI()
 
-data = pd.read_csv('archive/Sentiment.csv')
+data = pd.read_csv('Sentiment.csv')
 tokenizer = Tokenizer(num_words=2000, split=' ')
 tokenizer.fit_on_texts(data['text'].values)
 
